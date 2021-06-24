@@ -1,0 +1,136 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10345322083,
+              "status": "passed"
+            },
+            "match": {
+              "location": "UserLogin.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "User able login and search Item and add to cart",
+        "description": "",
+        "id": "check-user-able-to-login-in-amazon;user-able-login-and-search-item-and-add-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7077146291,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is Logged in",
+            "match": {
+              "location": "UserLogin.user_is_Logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5104811125,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enter \"shirt for man\" in search textbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"shirt for man\"",
+                  "offset": 6
+                }
+              ],
+              "location": "UserLogin.search_item(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 447985000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "add item to checkout",
+            "match": {
+              "location": "UserLogin.addItem()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14053614459,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "add item to cart",
+            "match": {
+              "location": "UserLogin.addItemtoCart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2415860875,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "proceed to checkout",
+            "match": {
+              "location": "UserLogin.proceedtoCheckout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2331087125,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "enter invalid email \"sankar@test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sankar@test.com\"",
+                  "offset": 20
+                }
+              ],
+              "location": "UserLogin.enterEmail(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 98661667,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify the error message \"We cannot find an account with that email address\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"We cannot find an account with that email address\"",
+                  "offset": 25
+                }
+              ],
+              "location": "UserLogin.checkError(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Check user able to Login in Amazon",
+    "description": "   check user able to search the item\n   As a user of google\n   In order to select item and add to cart\n   verify",
+    "id": "check-user-able-to-login-in-amazon",
+    "keyword": "Feature",
+    "uri": "src/test/resource/User_loginDetails.feature",
+    "tags": []
+  }
+]
